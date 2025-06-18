@@ -136,6 +136,41 @@ li:hover {
   background-color: #222244;
 }
 
+.edit-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a40;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 0 6px rgba(0, 255, 255, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-input:focus {
+  background-color: #33334f;
+  box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.save-button {
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-button:hover {
+  background: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 14px rgba(255, 0, 255, 0.4);
+}
+
 .text {
   flex: 1;
   font-size: 1rem;
@@ -146,6 +181,18 @@ li:hover {
 .text.done {
   text-decoration: line-through;
   color: #888;
+}
+
+.edit-button{
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover{
+  transform: scale(1.2);
 }
 
 .delete-button {
